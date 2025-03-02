@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dev Board</title>
+        <link rel="stylesheet" href="styles/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+       <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+       <!-- font awesome cdn -->
+       <script src="https://kit.fontawesome.com/96ed21ca12.js" crossorigin="anonymous"></script>
+    
+       <!-- google font cdn -->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+       <style>
+           .poppins-font {
+                   font-family: "Poppins", sans-serif;
+                   font-weight: 400;
+                    font-style: normal;
+           }
+           .primary-bg{
+             background-color: rgb(244, 247, 255);
+           }
+           .btn-bg{
+            background-color: #3752FD;
+           }
+          .hr-line{
+            border: 0.8px dashed rgba(55, 82, 253, 0.2);;
+          }
+       </style>
+    
+       <!-- tailwind cdn  -->
+       <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    
+    
+    </head>
+<body class="poppins-font primary-bg p-5">
+    <header class="max-w-auto mx-auto bg-white rounded-lg py-2 px-6">
+        <nav class="flex justify-between items-center">
+           <div class="flex gap-6">
+             <img class="logo-img" src="./assets/logo.png" alt="logo picture">
+             <h1 class="logo-title">Dev<span class="font-extrabold">Board</span></h1>
+           </div>
+           
+           <div class="flex items-center gap-6">
+            <button class="btn btn-bg text-white text-base rounded-lg">Back to Desk</button>
+           </div>
+        </nav>
+ </header>
+ <main>
+     <div class="flex flex-col py-5 gap-4">
+        <h1 class="text-2xl font-bold mx-auto">Blogs</h1>
+        <div class="collapse bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-1" checked="checked" />
+            <div class="collapse-title font-semibold">Question-1: What are the different ways to select an element in the DOM?</div>
+            <div class="hr-line"></div>
+            <div class=" text-sm p-4">There are different ways to select an element in the DOM such as: getElimentById(), getElementsByclass(), getElementByTagName(),querySelector() etc.</div>
+          </div>
+          <div class="collapse bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-1" />
+            <div class="collapse-title font-semibold">Question-2: What is the difference between innerHTML, innerText, and textContent ?
+            </div>
+            <div class="hr-line"></div>
+            <div class=" text-sm p-4">innerHTML is used to get html inside element. innerText is used to set new text. textContent is used when we need to catch all text</div>
+          </div>
+          <div class="collapse bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-1" />
+            <div class="collapse-title font-semibold">Question-3: What is event delegation in the DOM?</div>
+            <div class="hr-line"></div>
+            <div class="text-sm p-4">Event delegation is a technique in JavaScript where instead of adding event listeners to individual child elements, we add a single event listener to a parent element. The event then bubbles up from the child elements to the parent</div>
+          </div>
+          <div class="collapse bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-1" />
+            <div class="collapse-title font-semibold">Question-4: What is event bubbling in the DOM?
+            </div>
+            <div class="hr-line"></div>
+            <div class="text-sm p-4">Event Bubbling in the DOM is a process where event starts from the target element and bubble up to the root element</div>
+          </div>
+          <div class="collapse bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-1" />
+            <div class="collapse-title font-semibold">Question-5: How do you create, add, and remove elements using JavaScript?</div>
+            <div class="hr-line"></div>
+            <div class="p-4 text-sm">We can creat a new element in JavaScript by using the document.createElement(). We can add element by using appendChild() and can remove an element by using removeChild()</div>
+          </div>
+     </div>
+
+ </main>
+</body>
+</html>
