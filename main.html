@@ -47,7 +47,7 @@
            </div>
            
            <div class="flex items-center gap-6">
-            <button class="btn btn-bg text-white text-base rounded-lg">Back to Desk</button>
+            <button id="back-desk" class="btn btn-bg text-white text-base rounded-lg">Back to Desk</button>
            </div>
         </nav>
  </header>
@@ -89,5 +89,11 @@
      </div>
 
  </main>
+
+ <script>
+    document.getElementById("back-desk").addEventListener("click", function() {
+        window.location.href = "index.html";
+    });
+</script>
 </body>
 </html>
