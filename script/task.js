@@ -35,7 +35,7 @@ document.getElementById("fix-buttion").addEventListener("click",function(event){
     const title1Text = title1.innerText;
     const historyList = document.createElement("p");
     historyList.innerText = `You have Completed the task "${title1Text}" at ${currentTime}`;
-    historyList.classList.add("bg-[#f4f7ff]","rounded-lg","p-4", "mt-4");
+    historyList.classList.add("bg-[#f4f7ff]","rounded-lg","p-4", "mt-4", "w-11/12");
     activityLog.appendChild(historyList);
     
 })
@@ -75,7 +75,7 @@ document.getElementById("mode-button").addEventListener("click",function(event){
     const title2Text = title2.innerText;
     const historyList = document.createElement("p");
     historyList.innerText = `You have Completed the task "${title2Text}" at ${currentTime}`;
-    historyList.classList.add("bg-[#f4f7ff]","rounded-lg","p-4", "mt-4");
+    historyList.classList.add("bg-[#f4f7ff]","rounded-lg","p-4", "mt-4", "w-11/12");
     activityLog.appendChild(historyList);
     
 })
@@ -112,7 +112,7 @@ document.getElementById("optimize-btn").addEventListener("click",function(event)
      const title3Text = title3.innerText;
      const historyList = document.createElement("p");
      historyList.innerText = `You have Completed the task "${title3Text}" at ${currentTime}`;
-     historyList.classList.add("bg-[#f4f7ff]","rounded-lg","p-4", "mt-4");
+     historyList.classList.add("bg-[#f4f7ff]","rounded-lg","p-4", "mt-4", "w-11/12");
      activityLog.appendChild(historyList);
     
 })
@@ -150,7 +150,7 @@ document.getElementById("emoji-btn").addEventListener("click",function(event){
     const title4Text = title4.innerText;
     const historyList = document.createElement("p");
     historyList.innerText = `You have Completed the task "${title4Text}" at ${currentTime}`;
-    historyList.classList.add("bg-[#f4f7ff]","rounded-lg","p-4", "mt-4");
+    historyList.classList.add("bg-[#f4f7ff]","rounded-lg","p-4", "mt-4", "w-11/12");
     activityLog.appendChild(historyList);
     
 })
@@ -188,7 +188,7 @@ document.getElementById("ai-btn").addEventListener("click",function(event){
      const title5Text = title5.innerText;
      const historyList = document.createElement("p");
      historyList.innerText = `You have Completed the task "${title5Text}" at ${currentTime}`;
-     historyList.classList.add("bg-[#f4f7ff]","rounded-lg","p-4", "mt-4");
+     historyList.classList.add("bg-[#f4f7ff]","rounded-lg","p-4", "mt-4","w-11/12");
      activityLog.appendChild(historyList);
      
 })
@@ -225,21 +225,12 @@ document.getElementById("job-btn").addEventListener("click",function(event){
    const title6Text = title6.innerText;
    const historyList = document.createElement("p");
    historyList.innerText = `You have Completed the task "${title6Text}" at ${currentTime}`;
-   historyList.classList.add("bg-[#f4f7ff]","rounded-lg","p-4", "mt-4");
+   historyList.classList.add("bg-[#f4f7ff]","rounded-lg","p-4", "mt-4", "w-11/12");
    activityLog.appendChild(historyList);
-   
     
 })
 
-document.getElementById("clear-btn").addEventListener("click",function(event){
-    event.preventDefault();
-    document.getElementById("fix-btn").style.display = "none"
-    document.getElementById("mode-btn").style.display = "none"
-    document.getElementById("optimize").style.display = "none"
-    document.getElementById("emoji").style.display = "none"
-    document.getElementById("ai").style.display = "none"
-    document.getElementById("job").style.display = "none"
-})
+
 
 document.getElementById("clear-btn").addEventListener("click", function(){
     const activitySection = document.getElementById("activityLog");

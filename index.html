@@ -28,6 +28,9 @@
        .btn-bg{
         background-color: #3752FD;
        }
+       .hr-line{
+            border: 0.8px dashed rgba(55, 82, 253, 0.2);
+          }
    </style>
 
    <!-- tailwind cdn  -->
@@ -36,7 +39,7 @@
 
 </head>
 <body class="poppins-font primary-bg p-5">
-    <header class="max-w-auto mx-auto bg-white rounded-lg py-2 px-6">
+    <header class="max-w-[1536px] mx-auto bg-white rounded-lg py-2 px-6">
            <nav class="flex justify-between items-center">
               <div class="flex gap-6">
                 <img class="logo-img" src="./assets/logo.png" alt="logo picture">
@@ -52,7 +55,8 @@
               </div>
            </nav>
     </header>
-    <main class="max-w-auto mx-auto primary-bg rounded-lg  py-2 mt-4 flex">
+    
+    <main class="max-w-[1536px] mx-auto primary-bg rounded-lg  py-2 mt-4 flex">
         <div class="flex gap-5 rounded-lg  ">
             <div class="left-box max-w-3/4 bg-white py-5 px-5 rounded-lg">
 
@@ -86,13 +90,13 @@
                 </div>
          
                  </div>
-                
+                <hr class="hr-line mt-6">
                  <!-- 2nd row -->
                   <div class="grid md:grid-cols-3 sm:grid-cols-1 gap-4 mt-5">
                           <div class="card-1 rounded-lg primary-bg p-4">
                             <p class="max-w-fit bg-white text-base p-2 rounded-lg mb-4 text-[#00303C]">ShopEase</p>
                             <h3 id="1cardTitle" class="text-xl font-semibold mb-4 text-[#00303C]">Fix Mobile Button Issue </h3>
-                            <p class="text-gray-400 bg-white text-base p-2 rounded-lg mb-4 h-[180px]">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
+                            <p class="text-gray-400 bg-white text-base p-2 rounded-lg mb-4 h-[180px]">A fix mobile button is a floating or sticky button on mobile screens for quick access to actions or navigation.</p>
                             
                             <div class="flex justify-between">
                                 <div>
@@ -106,7 +110,7 @@
                           <div class="card-2 rounded-lg primary-bg p-4">
                             <p class="bg-white max-w-fit text-base p-2 rounded-lg mb-4 text-[#00303C]">CloudSync</p>
                             <h3 id="2cardTitle" class="text-xl font-semibold mb-4 text-[#00303C]">Add Dark Mode </h3>
-                            <p class="text-gray-400 bg-white text-base p-2 rounded-lg mb-4 h-[180px]">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
+                            <p class="text-gray-400 bg-white text-base p-2 rounded-lg mb-4 h-[180px]">Add dark mode using CSS @media (prefers-color-scheme: dark) or JavaScript toggle. It improves readability, reduces eye strain, and enhances aesthetics.</p>
                             
                             <div class="flex justify-between">
                                 <div>
@@ -120,7 +124,7 @@
                           <div class="card-3 rounded-lg primary-bg p-4">
                             <p class="bg-white max-w-fit text-base p-2 rounded-lg mb-4 text-[#00303C]">SwiftPay</p>
                             <h3 id="3cardTitle" class="text-xl font-semibold mb-4 text-[#00303C]">Optimize  Home page </h3>
-                            <p class="text-gray-400 bg-white text-base p-2 rounded-lg mb-4 h-[180px]">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
+                            <p class="text-gray-400 bg-white text-base p-2 rounded-lg mb-4 h-[180px]">Optimize your home by improving lighting, decluttering spaces, enhancing energy efficiency, using smart devices, and creating a comfortable, functional environment.</p>
                             
                             <div class="flex justify-between">
                                 <div>
@@ -138,8 +142,7 @@
                     <div class="card-1 rounded-lg primary-bg p-4">
                       <p class="bg-white max-w-fit text-base p-2 rounded-lg mb-4 text-[#00303C]">Meta</p>
                       <h3 id="4cardTitle" class="text-xl font-semibold mb-4 text-[#00303C]">Add new emoji 🤲 </h3>
-                      <p class="text-gray-400 bg-white text-base p-2 rounded-lg mb-4">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
-                        and ensure onClick works properly</p>
+                      <p class="text-gray-400 bg-white text-base p-2 rounded-lg mb-4">Add new emojis using Unicode updates, custom image sets, or JavaScript libraries to enhance user experience and communication creatively.</p>
                       
                       <div class="flex justify-between">
                           <div>
@@ -153,8 +156,7 @@
                     <div class="card-2 rounded-lg primary-bg p-4">
                       <p class="bg-white max-w-fit text-base p-2  rounded-lg mb-4 text-[#00303C]">Google LLC</p>
                       <h3 id="5cardTitle" class="text-xl font-semibold mb-4 text-[#00303C]">Integrate OpenAI API </h3>
-                      <p class="text-gray-400 bg-white text-base p-2 rounded-lg mb-4">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
-                        and ensure onClick works properly.</p>
+                      <p class="text-gray-400 bg-white text-base p-2 rounded-lg mb-4">Integrate OpenAI API by obtaining API keys, making HTTP requests, handling responses, and using AI models for automation, chatbots, or analysis.</p>
                       
                       <div class="flex justify-between">
                           <div>
@@ -168,7 +170,7 @@
                     <div class="card-3 rounded-lg primary-bg p-4">
                       <p class="bg-white max-w-fit text-base p-2 rounded-lg mb-4 text-[#00303C]">Glassdoar</p>
                       <h3 id="6cardTitle" class="text-xl font-semibold mb-4 text-[#00303C]">Improve Job searching  </h3>
-                      <p class="text-gray-400 bg-white text-base p-2 rounded-lg mb-4">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
+                      <p class="text-gray-400 bg-white text-base p-2 rounded-lg mb-4">DImprove job searching by optimizing resumes, using LinkedIn, networking, applying strategically, enhancing skills, and preparing for interviews effectively.</p>
                       
                       <div class="flex justify-between">
                           <div>
